@@ -38,9 +38,7 @@ public class Main {
             numbers_of_quesses++;
         }
 
-        if (player_quess == number_of_computer) {
-            System.out.println ("You win");
-        }
+        System.out.println ("You win");
         System.out.println ("it took you " + numbers_of_quesses + " quesses");
     }
 
