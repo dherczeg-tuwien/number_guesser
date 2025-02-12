@@ -10,7 +10,13 @@ public class Main {
 
     static int read_player_number () {
         System.out.print("Enter your number: ");
-        int player_quess = scanner.nextInt();
+        int player_quess = -1;
+        try {
+            player_quess = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("it should be a number");
+            scanner.next();
+        }
         return player_quess;
     }
 
