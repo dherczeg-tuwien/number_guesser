@@ -7,6 +7,7 @@ public class Main {
 
     static Scanner scanner = new Scanner(System.in);
     static Random rand = new Random();
+    static int numbers_of_quesses = 1;
 
     static int read_player_number () {
         System.out.print("Enter your number: ");
@@ -21,7 +22,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int number_of_computer = rand.nextInt(101);
+        int number_of_computer = rand.nextInt(11);
         int player_quess = read_player_number ();
 
         while (player_quess != number_of_computer) {
@@ -34,10 +35,13 @@ public class Main {
             }
 
             player_quess = read_player_number ();
+            numbers_of_quesses++;
         }
 
         if (player_quess == number_of_computer) {
-            System.out.print ("You win");
+            System.out.println ("You win");
         }
+        System.out.println ("it took you " + numbers_of_quesses + " quesses");
     }
+
 }
