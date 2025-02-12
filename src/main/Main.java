@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static final int COMPUTER_GUESS_RANGE = 101;
+
     static Scanner scanner = new Scanner(System.in);
     static Random rand = new Random();
     static int numbers_of_quesses = 1;
@@ -22,7 +24,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int number_of_computer = rand.nextInt(11);
+        int number_of_computer = rand.nextInt(COMPUTER_GUESS_RANGE);
         int player_quess = read_player_number ();
 
         while (player_quess != number_of_computer) {
