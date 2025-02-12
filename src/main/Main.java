@@ -17,10 +17,11 @@ public class Main{
         System.out.print("Enter your number: ");
         int player_quess = scanner.nextInt();
 
+
         while (player_quess != number_of_computer) {
+
+
             System.out.println ("false number");
-            System.out.println ("Enter your number: ");
-            player_quess = scanner.nextInt();
 
             if (player_quess > number_of_computer) {
                 System.out.println("number should be smaller");
@@ -28,7 +29,12 @@ public class Main{
 
             else {
                 System.out.println("number should be greater");
+
             }
+            System.out.print ("Enter your number: ");
+
+            player_quess = scanner.nextInt();
+
             }
         if (player_quess == number_of_computer) {
             System.out.print ("You win");
