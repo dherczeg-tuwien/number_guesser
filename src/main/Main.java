@@ -26,11 +26,11 @@ public class Main {
         try {
             convertedQuess = Integer.parseInt(player_quess);
         } catch (Exception e) {
-            System.out.println("it should be a number");
+            System.out.println("\033[43m\033[1m\033[31mit should be a number\033[0m");
             return -1;
         }
         if (convertedQuess > COMPUTER_GUESS_RANGE || convertedQuess < 0) {
-            System.out.println("You have entered an invalid number!");
+            System.out.println("\033[31mYou have entered an invalid number!\033[0m");
             return -1;
         }
         return convertedQuess;
