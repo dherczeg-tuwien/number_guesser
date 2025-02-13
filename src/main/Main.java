@@ -72,6 +72,8 @@ public class Main {
             System.out.println ("You win");
             System.out.println ("it took you " + numbers_of_quesses + " quesses");
             System.out.println("wollen Sie weiter spielen? (y/n)");
+            numbers_of_quesses = 1;
+
         } while (scanner.next().toLowerCase().charAt(0) == 'y');
     }
 
