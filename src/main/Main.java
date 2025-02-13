@@ -45,7 +45,7 @@ public class Main {
         int player_quess;
         do {
             System.out.print("Enter your number between 0 and " + (COMPUTER_GUESS_RANGE - 1) + ": ");
-            player_quess = convertPlayerInputToNumber(scanner.next());
+            player_quess = convertPlayerInputToNumber(scanner.nextLine());
         } while (player_quess == -1);
         return player_quess;
     }
